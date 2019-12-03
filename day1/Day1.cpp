@@ -9,8 +9,9 @@ int SaveSanta::rocketEquation(int mass) {
     std::cout << mass << std::endl;
     int fuel = (mass / 3) - 2;
     //fix this
-    if (fuel >= 6
-            ) {
+    if (fuel >= 6) {
         return fuel + SaveSanta::rocketEquation(fuel);
-    } else { return fuel; }
+    } else {
+        return fuel;
+    }
 };
